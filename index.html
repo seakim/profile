@@ -22,9 +22,6 @@
 </head>
 
 <body id="top">
-	<!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
 	<!-- preloader area start -->
 	<div id="preloader">
 		<div class="loader_line"></div>
@@ -37,7 +34,9 @@
 				<div class="row align-items-center">
 					<div class="col-md-3 col-sm-12">
 						<div class="logo">
-							<a href="index.html"><h1 class="nav-logo">Sean Kim</h1></a>
+							<a href="index.html">
+								<h1 class="nav-logo">Sean Kim</h1>
+							</a>
 						</div>
 					</div>
 					<div class="col-md-9 d-none d-md-block">
@@ -62,7 +61,8 @@
 	</header>
 	<!-- header area end -->
 	<!-- slider area start -->
-	<section id="home" class="slider-area parallax" data-speed="3" data-bg-image="assets/img/bg/background.jpg">
+	<section id="home" class="slider-area parallax" data-speed="3">
+		<!-- data-bg-image="assets/img/bg/background.jpg"> -->
 		<div class="container">
 			<div class="slider-content">
 				<h2 class="txtanim1"><span>I'm</span> <span>Sean</span> <span>Kim</span></h2>
@@ -93,7 +93,7 @@
 					<span>p</span>
 					<span>e</span>
 					<span>r</span>
-				</h4><br/><br/>
+				</h4><br /><br />
 				<h6 class="txtanim1"><a href="#"><span>&nbsp;&nbsp;RESUME</span></a></h6>
 			</div>
 		</div>
@@ -121,11 +121,11 @@
 						<div class="section-title">
 							<h2 class="txt2_is_show">About Me</h2>
 						</div>
-						<p class="txt1-wrap"><span class="txt1">A full-stack junior developer 
-							with an emphasis on Frontend Development with React.  With over 3+ years experience 
-							in client facing technical support, goal is to provide intuitive solution integrating development 
-							to help maximize growth.  Entrepreneurial, detail-oriented leader with the ability to build 
-							sophisticated web applications from mockup to deployment.</span></p>
+						<p class="txt1-wrap"><span class="txt1">A full-stack junior developer
+								with an emphasis on Frontend Development with React. With over 3+ years experience
+								in client facing technical support, goal is to provide intuitive solution integrating development
+								to help maximize growth. Entrepreneurial, detail-oriented leader with the ability to build
+								sophisticated web applications from mockup to deployment.</span></p>
 						<div class="social-link">
 							<a href="https://github.com/seakim" target=”_blank”><i class="fa fa-github"></i></a>
 							<a href="https://www.linkedin.com/in/seankhkim" target=”_blank”><i class="fa fa-linkedin"></i></a>
@@ -141,9 +141,9 @@
 	<!-- service area start -->
 	<div class="service-area pb--200">
 		<div class="container">
-				<div class="section-title">
-						<h2 class="txt2_is_show">Technology</h2>
-					</div>
+			<div class="section-title">
+				<h2 class="txt2_is_show">Technology</h2>
+			</div>
 			<div class="row">
 				<div class="col-md-4">
 					<div class="single-service txt2_is_show">
@@ -189,42 +189,48 @@
 			</div>
 			<div class="fortfolio-filter">
 				<button class="active" data-filter="*">All</button>
-				<button data-filter=".web">Full Stack</button>
-				<button data-filter=".design">Front-End</button>
-				<!-- <button data-filter=".marketing">Marketing</button> -->
+				<button data-filter=".fullstack">Full Stack</button>
+				<button data-filter=".frontend">Front-End</button>
+				<button data-filter=".backend">Back-End</button>
 			</div>
 			<div class="portfolio-masonary row" id="container">
-				<div class="prt-grid marketing design col-md-4 col-sm-6">
+				<!-- <div class="prt-grid fullstack col-md-4 col-sm-6">
 					<div class="prt-item">
 						<a class="expand-video" href="https://www.youtube.com/watch?v=eDiA1p5DlLg">
 							<span class="flaticon-play-button"></span>
 							<img src="assets/img/portfolio/img1.jpg" alt="image">
 						</a>
 					</div>
-				</div>
-				<div class="prt-grid marketing web col-md-4 col-sm-6">
+				</div> -->
+
+				<div class="prt-grid fullstack col-md-4 col-sm-6">
 					<div class="prt-item">
-						<a class="expand-img" href="assets/img/portfolio/img2.jpg"><img src="assets/img/portfolio/img2.jpg" alt="image"></a>
+						<a class="expand-img" data-toggle="modal" data-target=".bd-example-modal-lg-1">
+							<img src="assets/img/portfolio/techhub/techhub-1.png" alt="image"></a>
 					</div>
 				</div>
-				<div class="prt-grid col-md-4 col-sm-6">
+				<div class="prt-grid fullstack col-md-4 col-sm-6">
 					<div class="prt-item">
-						<a class="expand-img" href="assets/img/portfolio/img3.jpg"><img src="assets/img/portfolio/img3.jpg" alt="image"></a>
+						<a class="expand-img" data-toggle="modal" data-target=".bd-example-modal-lg-2"
+						><img src="assets/img/portfolio/img3.jpg" alt="image"></a>
 					</div>
 				</div>
-				<div class="prt-grid design marketing col-md-4 col-sm-6">
+				<div class="prt-grid fullstack col-md-4 col-sm-6">
 					<div class="prt-item">
-						<a class="expand-img" href="assets/img/portfolio/img4.jpg"><img src="assets/img/portfolio/img4.jpg" alt="image"></a>
+						<a class="expand-img" data-toggle="modal" data-target=".bd-example-modal-lg-3"
+						><img src="assets/img/portfolio/img4.jpg" alt="image"></a>
 					</div>
 				</div>
-				<div class="prt-grid web design col-md-4 col-sm-6">
+				<div class="prt-grid frontend col-md-4 col-sm-6">
 					<div class="prt-item">
-						<a class="expand-img" href="assets/img/portfolio/img5.jpg"><img src="assets/img/portfolio/img5.jpg" alt="image"></a>
+						<a class="expand-img" data-toggle="modal" data-target=".bd-example-modal-lg-4"
+						><img src="assets/img/portfolio/img5.jpg" alt="image"></a>
 					</div>
 				</div>
-				<div class="prt-grid design marketing col-md-4 col-sm-6">
+				<div class="prt-grid backend col-md-4 col-sm-6">
 					<div class="prt-item">
-						<a class="expand-img" href="assets/img/portfolio/img6.jpg"><img src="assets/img/portfolio/img6.jpg" alt="image"></a>
+						<a class="expand-img" data-toggle="modal" data-target=".bd-example-modal-lg-5"
+						><img src="assets/img/portfolio/img6.jpg" alt="image"></a>
 					</div>
 				</div>
 			</div>
@@ -235,6 +241,139 @@
 			</svg>
 		</div>
 	</section>
+
+	<!-- Portfolio Modals -->
+	<div class="modal fade bd-example-modal-lg-1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<!-- Carousel -->
+
+					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img class="d-block w-100" src="assets/img/portfolio/techhub/techhub-1.png" alt="First slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="assets/img/portfolio/techhub/techhub-2.png" alt="Second slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="assets/img/portfolio/techhub/techhub-3.png" alt="Third slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="assets/img/portfolio/techhub/techhub-4.png" alt="Forth slide">
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<h2>Ticketing / Dashboard page at BlackRock Tech:Hub NY</h2><br/>
+					<ul>
+						<li>&nbsp;&bull;&nbsp;Integrates with HP Service Manager by API request, and signigicantly reduces time to create each ticket (from 2 minutes to 10 seconds).</li>
+						<li>&nbsp;&bull;&nbsp;Tracks end users' technical issues and trends, and displays daily / weekly / monthly / yearly views in dashboard.</li><br/>
+						<li>&nbsp;&bull;&nbsp;<i>Full-Stack, MySQL, Express.js, Node.js, Handlebars.js, HP Service Manager API</i></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade bd-example-modal-lg-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Modal title</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Modal2 body text goes here.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade bd-example-modal-lg-3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Modal title</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Modal3 body text goes here.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade bd-example-modal-lg-4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Modal title</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Modal4 body text goes here.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade bd-example-modal-lg-5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Modal title</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Modal5 body text goes here.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade bd-example-modal-lg-6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Modal title</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Modal6 body text goes here.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- portfolio area end -->
 	<!-- Education strat -->
 	<section class="education-area" id="education">
@@ -261,13 +400,17 @@
 					<div class="single-service txt2_is_show">
 						<div class="icon"><span class="fa fa-graduation-cap"></span></div>
 						<div class="srvc-content">
-							<h4>&nbsp;B.A. in Mathematical Science & Minor in Computer Science&nbsp; |&nbsp; Kean University&nbsp; |&nbsp; 2014</h4>
+							<h4>&nbsp;B.A. in Mathematical Science & Minor in Computer Science&nbsp; |&nbsp; Kean University&nbsp; |&nbsp;
+								2014</h4>
 							<p>Graduated with magna cum laude (GPA 3.70) and Dean’s Honors List.</p>
 							<p>Completed courseworks include:</p>
 							<ul>
-								<li>&nbsp;&bull;&nbsp;Computer Organization and Programming, Data Structure, Assembly Language, IT Project Management</li>
-								<li>&nbsp;&bull;&nbsp;Calculus I, II, III, IV, Differential Equations, Linear Algebra, Euclidean / Non-Euclidean Geometry, 
-									Probability / Statistics, Regression Analysis, Applied Statistics I, II, Statistical methods for Analyzing Data</li>
+								<li>&nbsp;&bull;&nbsp;Computer Organization and Programming, Data Structure, Assembly Language, IT Project
+									Management</li>
+								<li>&nbsp;&bull;&nbsp;Calculus I, II, III, IV, Differential Equations, Linear Algebra, Euclidean /
+									Non-Euclidean Geometry,
+									Probability / Statistics, Regression Analysis, Applied Statistics I, II, Statistical methods for Analyzing
+									Data</li>
 								<li>&nbsp;&bull;&nbsp;Economics I, II, Accounting I, Corporate Finance I</li>
 							</ul>
 						</div>
@@ -276,7 +419,6 @@
 			</div>
 		</div>
 	</section>
-	<!-- Education end -->
 	<div class="service-area pb--200">
 		<div class="white_svg svg_gray">
 			<svg x="0px" y="0px" viewBox="0 186.5 1920 113.5">
@@ -284,21 +426,8 @@
 			</svg>
 		</div>
 	</div>
-	<!-- Certifications & Exams end -->
-	<!-- Experience area start -->
-	<!-- <section class="fortfolio-area bg-gray pt--100 pb--200" id="portfolio">
-		<div class="container">
-			<div class="section-title">
-				<h2 class="txt2_is_show">Experience</h2>
-			</div>
-		</div>
-		<div class="white_svg svg_white">
-			<svg x="0px" y="0px" viewBox="0 186.5 1920 113.5">
-				<polygon points="0,300 655.167,210.5 1432.5,300 1920,198.5 1920,300 " />
-			</svg>
-		</div>
-	</section> -->
-	<!-- Experience area end -->
+	<!-- Education end -->
+
 	<!-- contact area start -->
 	<section class="contact-area bg-gray ptb--100" id="contact">
 		<div class="container">
@@ -344,7 +473,6 @@
 	</section>
 	<!-- contact area end -->
 
-	
 	<!-- footer area start -->
 	<footer>
 		<div class="footer-area">
@@ -368,11 +496,8 @@
 		</div>
 	</footer>
 	<!-- footer area end -->
-	<!-- jquery latest version -->
 	<script src="assets/js/vendor/jquery-3.2.0.min.js"></script>
-	<!-- bootstrap 4 js -->
 	<script src="assets/js/bootstrap.min.js"></script>
-	<!-- others plugins -->
 	<script src="assets/js/jquery.slicknav.min.js"></script>
 	<script src="assets/js/jquery.magnific-popup.min.js"></script>
 	<script src="assets/js/imagesloaded.pkgd.min.js"></script>
