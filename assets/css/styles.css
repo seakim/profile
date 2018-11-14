@@ -21,7 +21,9 @@
     7. Footer Area
 
 -----------------------------------------------------------------------------------*/
-
+.black {
+    color: black;
+}
 /*============================================
 * 1. Header Area
 *=============================================*/
@@ -219,6 +221,11 @@
 .slider-content h4 span{
     display: inline-block!important;
     letter-spacing: 0;
+}
+.slider-content .quote {
+    color: #ffffff;
+    font-weight: 100;
+    margin-bottom: 3em;
 }
 .txt1-wrap{
     overflow: hidden;
@@ -581,6 +588,14 @@
     display: inline-block;
 }
 
+.modal-center {
+    text-align: center;
+    font-size: 0.8em;
+}
+.modal-right {
+    text-align: right;
+    color: black;
+}
 /*============================================
 * END Fortfolio Area
 *=============================================*/
@@ -689,22 +704,14 @@
     padding: 18px 0px;
     position: relative;
 }
-.copyright {
+.align-items-center {
+    text-align: center;
+    margin: 1em 0;
+}
+.align-items-right {
     text-align: right;
 }
-.copyright p{
-        font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0;
-    color: #898989;
-}
-.flogo a img{
-    max-width: 40px;
-}
-.copyright p span{
-    display: inline-block;
-    color: #333;
-}
+
 .go-to-top a{
     color: #333;
     position: absolute;
